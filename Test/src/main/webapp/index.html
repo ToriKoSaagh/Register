@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Employee Management System</title>
+</head>
+<link rel="stylesheet" href="./styles.css">
+
+<style>
+
+body{
+	font-family: "Open Sans", sans-serif;
+}
+
+/* Style for the box */
+.box {
+  width: 500px;
+  height: auto;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #f8f8f8;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+/* Style for the form inside the box */
+.box form {
+  margin-top : 30px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* Apply the box style to the container of the form */
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+	/* Style for form labels */
+label {
+  display: inline-block;
+  width: 100px;
+  text-align: left;
+  margin-bottom: 5px;
+}
+
+/* Style for form input fields */
+input[type="text"],
+input[type="password"] {
+  padding: 5px;
+  width: 200px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  margin-bottom: 10px;
+}
+
+/* Style for radio buttons */
+input[type="radio"] {
+  margin-right: 10px;
+}
+
+/* Style for submit button */
+input[type="submit"] {
+  padding: 5px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+/* Style for form container divs */
+.fullname,
+.department,
+.phone,
+.password,
+.gender {
+ margin-bottom: 20px;
+}
+</style>
+
+<body>
+	<div class="container">
+		<div class="box">
+			<form action="SignUp" method="post">
+		<div class="fullname">
+			<label>FullName:</label>
+			<input type="text" name="fullname" id="fullname"/>
+		</div>
+		
+		<div class="department">
+			<label>Department:</label>
+			<input type="text" name="department" id="department"/>
+		</div>
+		
+		<div class="phone">
+			<label>Phone:</label>
+			<input type="text" name="phone" id="phone"/>
+		</div>
+		
+		<div class="password">
+			<label>Password:</label>
+			<input type="password" name="pass" id="password"/>
+		</div>
+		
+		
+		<div class="gender">
+			<label>Gender:</label>
+			<input type="radio" value="male" name="gender" id="gender"/> Male
+			<input type="radio" value="female" name="gender" id="gender"/> Female
+			
+		</div>
+		<input type="submit" value="SignUp" />
+	</form>
+		</div>
+	</div>
+	
+</body>
+</html>

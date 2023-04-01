@@ -1,0 +1,43 @@
+@charset "ISO-8859-1";
+
+/* Style for form labels */
+label {
+  display: inline-block;
+  width: 100px;
+  text-align: left;
+  margin-bottom: 5px;
+}
+
+/* Style for form input fields */
+input[type="text"],
+input[type="password"] {
+  padding: 5px;
+  width: 200px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  margin-bottom: 10px;
+}
+
+/* Style for radio buttons */
+input[type="radio"] {
+  margin-right: 10px;
+}
+
+/* Style for submit button */
+input[type="submit"] {
+  padding: 10px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+/* Style for form container divs */
+.fullname,
+.department,
+.phone,
+.password,
+.gender {
+  margin-bottom: 20px;
+}
